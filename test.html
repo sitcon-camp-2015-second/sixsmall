@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>title</title>
+			<meta name="description" content="SITCON Summer Camp 2015 ."/>
+			<meta charset="utf-8">
+			
+			
+			<!--link rel="stylesheet" type="text/css" href="style.css"/-->
+			
+			<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+			<script type="text/javascript">
+
+			jQuery(document).ready(function(xml){
+				$.ajax({
+					url: 'small.xml',
+					type: 'GET',
+					dataType: 'xml',
+					timeout:100,
+					sucess:function(xml){
+						$(xml).find("TaiTrainList").each(function(i){
+							var tr1022 = $(this).find("TimeInfo").text();
+							alert("tr1022");
+							})
+					},
+					error:function(xml){
+						alert(xml);
+						console.log(xml);
+					}
+				})
+
+			});
+			</script> 
+
+	</head>
+
+	<body>
+
+	</body>
+
+
+</html>
