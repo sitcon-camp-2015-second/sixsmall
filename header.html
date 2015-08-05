@@ -2,6 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+
+
+	<body class="yui3-skin-sam">
+	<script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/3.9.0/build/cssgrids/cssgrids-min.css">
+
+
 		<link rel="stylesheet" href="header_style.css">
 		
 		<title>SITCON_Header</title>
@@ -21,524 +28,594 @@
 	</head>
 	<body>
 		
-		<select class="StationSelect" name="Station">
-			<option value="0">請選擇起始站</option>
-			<optgroup label="＝＝臺北地區＝＝" class="Dropdown_Station"> 
-				<option value="1">福隆</option>
-				<option value="2">貢寮</option>
-				<option value="3">雙溪</option>
-				<option value="4">牡丹</option>
-				<option value="5">三貂嶺</option>
-				<option value="6">猴硐</option>
-				<option value="7">瑞芳</option>
-				<option value="8">四腳亭</option>
-				<option value="9">暖暖</option>
-				<option value="10">基隆</option>
-				<option value="11">三坑</option>
-				<option value="12">八堵</option>
-				<option value="13">七堵</option>
-				<option value="14">百福</option>
-				<option value="15">五堵</option>
-				<option value="16">汐止</option>
-				<option value="17">汐科</option>
-				<option value="18">南港</option>
-				<option value="19">松山</option>
-				<option value="20">台北</option>
-				<option value="21">萬華</option>
-				<option value="22">板橋</option>
-				<option value="23">浮洲</option>
-				<option value="24">樹林</option>
-				<option value="25">山佳</option>
-				<option value="26">鶯歌</option>
-			<optgroup label="＝＝桃園地區＝＝" class="Dropdown_Station">
-				<option value="27">桃園</option>
-				<option value="28">內壢</option>
-				<option value="29">中壢</option>
-				<option value="30">埔心</option>
-				<option value="31">楊梅</option>
-				<option value="32">富岡</option>
-			<optgroup label="＝＝新竹地區＝＝" class="Dropdown_Station">
-				<option value="33">湖口</option>
-				<option value="34">新豐</option>
-				<option value="35">竹北</option>
-				<option value="36">北新竹</option>
-				<option value="37">新竹</option>
-				<option value="38">香山</option>
-				<option value="39">北湖</option>
-			<optgroup label="＝＝苗栗地區＝＝" class="Dropdown_Station">
-				<option value="40">崎頂</option>
-				<option value="41">竹南</option>
-				<option value="42">談文</option>
-				<option value="43">大山</option>
-				<option value="44">後龍</option>
-				<option value="45">龍崗</option>
-				<option value="46">白沙屯</option>
-				<option value="47">新埔</option>
-				<option value="48">通霄</option>
-				<option value="49">苑裡</option>
-				<option value="50">造橋</option>
-				<option value="51">豐富</option>
-				<option value="52">苗栗
-				</option>
-				<option value="53">南勢</option>
-				<option value="54">銅鑼</option>
-				<option value="55">三義</option>
-			<optgroup label="＝＝台中地區＝＝" class="Dropdown_Station">
-				<option value="56">日南</option>
-				<option value="57">大甲</option>
-				<option value="58">台中港</option>
-				<option value="59">清水</option>
-				<option value="60">沙鹿</option>
-				<option value="61">龍井</option>
-				<option value="62">大肚</option>
-				<option value="63">追分</option>
-				<option value="64">泰安</option>
-				<option value="65">后里</option>
-				<option value="66">豐原</option>
-				<option value="67">潭子</option>
-				<option value="68">太原</option>
-				<option value="69">臺中</option>
-				<option value="70">大慶</option>
-				<option value="71">烏日</option>
-				<option value="72">新烏日</option>
-				<option value="73">成功</option>
-			<optgroup label="＝＝彰化地區＝＝" class="Dropdown_Station">
-				<option value="74">彰化</option>
-				<option value="75">花壇</option>
-				<option value="76">大村</option>
-				<option value="77">員林</option>
-				<option value="78">永靖</option>
-				<option value="79">社頭</option>
-				<option value="80">田中</option>
-				<option value="81">二水</option>
-			<optgroup label="＝＝南投地區＝＝" class="Dropdown_Station"> 
-				<option value="82">源泉</option>
-				<option value="83">濁水</option>
-				<option value="84">龍泉</option>
-				<option value="85">集集</option>
-				<option value="86">水里</option>
-				<option value="87">車埕</option>
-			<optgroup label="＝＝雲林地區＝＝" class="Dropdown_Station">
-				<option value="88">林內</option>
-				<option value="89">石榴</option>
-				<option value="90">斗六</option>
-				<option value="91">斗南</option>
-				<option value="92">石龜</option>
-			<optgroup label="＝＝嘉義地區＝＝" class="Dropdown_Station"> 
-				<option value="93">大林</option>
-				<option value="94">民雄</option>
-				<option value="95">嘉北</option>
-				<option value="96">嘉義</option>
-				<option value="97">水上</option>
-				<option value="98">南靖</option>
-			<optgroup label="＝＝臺南地區＝＝" class="Dropdown_Station"> 
-				<option value="99">後壁</option>
-				<option value="100">新營</option>
-				<option value="101">柳營</option>
-				<option value="102">林鳳營</option>
-				<option value="103">隆田</option>
-				<option value="104">拔林</option>
-				<option value="105">善化</option>
-				<option value="106">南科</option>
-				<option value="107">新市</option>
-				<option value="108">永康</option>
-				<option value="109">大橋</option>
-				<option value="110">臺南</option>
-				<option value="111">保安</option>
-				<option value="112">仁德</option>
-				<option value="113">中洲</option>
-				<option value="114">長榮大學</option>
-				<option value="115">沙崙</option>
-			<optgroup label="＝＝高雄地區＝＝" class="Dropdown_Station">
-				<option value="116">大湖</option>
-				<option value="117">路竹</option>
-				<option value="118">岡山</option>
-				<option value="119">橋頭</option>
-				<option value="120">楠梓</option>
-				<option value="121">新左營</option>
-				<option value="122">左營</option>
-				<option value="123">高雄</option>
-				<option value="124">鳳山</option>
-				<option value="125">後庄</option>
-				<option value="126">九曲堂</option>
-			<optgroup label="＝＝屏東地區＝＝" class="Dropdown_Station"> 
-				<option value="127">六塊厝</option>
-				<option value="128">屏東</option>
-				<option value="129">歸來</option>
-				<option value="130">麟洛</option>
-				<option value="131">西勢</option>
-				<option value="132">竹田</option>
-				<option value="133">潮州</option>
-				<option value="134">崁頂</option>
-				<option value="135">南州</option>
-				<option value="136">鎮安</option>
-				<option value="137">林邊</option>
-				<option value="138">佳冬</option>
-				<option value="139">東海</option>
-				<option value="140">枋寮</option>
-				<option value="141">加祿</option>
-				<option value="142">內獅</option>
-				<option value="143">枋山</option>
-			<optgroup label="＝＝臺東地區＝＝" class="Dropdown_Station"> 
-				<option value="144">古莊</option>
-				<option value="145">大武</option>
-				<option value="146">瀧溪</option>
-				<option value="147">金崙</option>
-				<option value="148">太麻里</option>
-				<option value="149">知本</option>
-				<option value="150">康樂</option>
-				<option value="151">臺東</option>
-				<option value="152">山里</option>
-				<option value="153">鹿野</option>
-				<option value="154">瑞源</option>
-				<option value="155">瑞和</option>
-				<option value="156">關山</option>
-				<option value="157">海端</option>
-				<option value="158">池上</option>
-			<optgroup label="＝＝花蓮地區＝＝" class="Dropdown_Station"> 
-				<option value="159">富里</option>
-				<option value="160">東竹</option>
-				<option value="161">東里</option>
-				<option value="162">玉里</option>
-				<option value="163">三民</option>
-				<option value="164">瑞穗</option>
-				<option value="165">富源</option>
-				<option value="166">大富</option>
-				<option value="167">光復</option>
-				<option value="168">萬榮</option>
-				<option value="169">鳳林</option>
-				<option value="170">南平</option>
-				<option value="171">豐田</option>
-				<option value="172">壽豐</option>
-				<option value="173">平和</option>
-				<option value="174">志學</option>
-				<option value="175">吉安</option>
-				<option value="176">花蓮</option>
-				<option value="177">北埔</option>
-				<option value="178">景美</option>
-				<option value="179">新城</option>
-				<option value="180">崇德</option>
-				<option value="181">和仁</option>
-				<option value="182">和平</option>
-			<optgroup label="＝＝宜蘭地區＝＝" class="Dropdown_Station"> 
-				<option value="183">漢本</option>
-				<option value="184">武塔</option>
-				<option value="185">南澳</option>
-				<option value="186">東澳</option>
-				<option value="187">永樂</option>
-				<option value="188">蘇澳</option>
-				<option value="189">蘇澳新</option>
-				<option value="190">新馬</option>
-				<option value="191">冬山</option>
-				<option value="192">羅東</option>
-				<option value="193">中里</option>
-				<option value="194">二結</option>
-				<option value="195">宜蘭</option>
-				<option value="196">四城</option>
-				<option value="197">礁溪</option>
-				<option value="198">頂埔</option>
-				<option value="199">頭城</option>
-				<option value="200">外澳</option>
-				<option value="201">龜山</option>
-				<option value="202">大溪</option>
-				<option value="203">大里</option>
-				<option value="204">石城</option>
-			<optgroup label="＝＝平溪/深澳線＝＝" class="Dropdown_Station"> 
-				<option value="205">菁桐</option>
-				<option value="206">平溪</option>
-				<option value="207">嶺腳</option>
-				<option value="208">望古</option>
-				<option value="209">十分</option>
-				<option value="210">大華</option>
-				<option value="211">三貂嶺</option>
-				<option value="212">海科館</option>
-			<optgroup label="＝＝內灣/六家線＝＝" class="Dropdown_Station"> 
-				<option value="213">新竹</option>
-				<option value="214">北新竹</option>
-				<option value="215">千甲</option>
-				<option value="216">新莊</option>
-				<option value="217">竹中</option>
-				<option value="218">六家</option>
-				<option value="219">上員</option>
-				<option value="220">榮華</option>
-				<option value="221">竹東</option>
-				<option value="222">橫山</option>
-				<option value="223">九讚頭</option>
-				<option value="224">合興</option>
-				<option value="225">富貴</option>
-				<option value="226">內灣</option>
-			<optgroup label="＝＝集集線＝＝" class="Dropdown_Station"> 
-				<option value="227">二水</option>
-				<option value="228">源泉</option>
-				<option value="229">濁水</option>
-				<option value="230">龍泉</option>
-				<option value="231">集集</option>
-				<option value="232">水里</option>
-				<option value="233">車埕</option>
-			<optgroup label="＝＝沙崙線＝＝" class="Dropdown_Station"> 
-				<option value="234">長榮大學</option>
-				<option value="235">沙崙</option>
-		</select>
-		<br>
-		<br>
-		<select class="StationSelect" name="Station">
-			<option value="0">請選擇目的地</option>
-			<optgroup label="＝＝臺北地區＝＝" class="Dropdown_Station"> 
-				<option value="1">福隆</option>
-				<option value="2">貢寮</option>
-				<option value="3">雙溪</option>
-				<option value="4">牡丹</option>
-				<option value="5">三貂嶺</option>
-				<option value="6">猴硐</option>
-				<option value="7">瑞芳</option>
-				<option value="8">四腳亭</option>
-				<option value="9">暖暖</option>
-				<option value="10">基隆</option>
-				<option value="11">三坑</option>
-				<option value="12">八堵</option>
-				<option value="13">七堵</option>
-				<option value="14">百福</option>
-				<option value="15">五堵</option>
-				<option value="16">汐止</option>
-				<option value="17">汐科</option>
-				<option value="18">南港</option>
-				<option value="19">松山</option>
-				<option value="20">台北</option>
-				<option value="21">萬華</option>
-				<option value="22">板橋</option>
-				<option value="23">浮洲</option>
-				<option value="24">樹林</option>
-				<option value="25">山佳</option>
-				<option value="26">鶯歌</option>
-			<optgroup label="＝＝桃園地區＝＝" class="Dropdown_Station">
-				<option value="27">桃園</option>
-				<option value="28">內壢</option>
-				<option value="29">中壢</option>
-				<option value="30">埔心</option>
-				<option value="31">楊梅</option>
-				<option value="32">富岡</option>
-			<optgroup label="＝＝新竹地區＝＝" class="Dropdown_Station">
-				<option value="33">湖口</option>
-				<option value="34">新豐</option>
-				<option value="35">竹北</option>
-				<option value="36">北新竹</option>
-				<option value="37">新竹</option>
-				<option value="38">香山</option>
-				<option value="39">北湖</option>
-			<optgroup label="＝＝苗栗地區＝＝" class="Dropdown_Station">
-				<option value="40">崎頂</option>
-				<option value="41">竹南</option>
-				<option value="42">談文</option>
-				<option value="43">大山</option>
-				<option value="44">後龍</option>
-				<option value="45">龍崗</option>
-				<option value="46">白沙屯</option>
-				<option value="47">新埔</option>
-				<option value="48">通霄</option>
-				<option value="49">苑裡</option>
-				<option value="50">造橋</option>
-				<option value="51">豐富</option>
-				<option value="52">苗栗
-				</option>
-				<option value="53">南勢</option>
-				<option value="54">銅鑼</option>
-				<option value="55">三義</option>
-			<optgroup label="＝＝台中地區＝＝" class="Dropdown_Station">
-				<option value="56">日南</option>
-				<option value="57">大甲</option>
-				<option value="58">台中港</option>
-				<option value="59">清水</option>
-				<option value="60">沙鹿</option>
-				<option value="61">龍井</option>
-				<option value="62">大肚</option>
-				<option value="63">追分</option>
-				<option value="64">泰安</option>
-				<option value="65">后里</option>
-				<option value="66">豐原</option>
-				<option value="67">潭子</option>
-				<option value="68">太原</option>
-				<option value="69">臺中</option>
-				<option value="70">大慶</option>
-				<option value="71">烏日</option>
-				<option value="72">新烏日</option>
-				<option value="73">成功</option>
-			<optgroup label="＝＝彰化地區＝＝" class="Dropdown_Station">
-				<option value="74">彰化</option>
-				<option value="75">花壇</option>
-				<option value="76">大村</option>
-				<option value="77">員林</option>
-				<option value="78">永靖</option>
-				<option value="79">社頭</option>
-				<option value="80">田中</option>
-				<option value="81">二水</option>
-			<optgroup label="＝＝南投地區＝＝" class="Dropdown_Station"> 
-				<option value="82">源泉</option>
-				<option value="83">濁水</option>
-				<option value="84">龍泉</option>
-				<option value="85">集集</option>
-				<option value="86">水里</option>
-				<option value="87">車埕</option>
-			<optgroup label="＝＝雲林地區＝＝" class="Dropdown_Station">
-				<option value="88">林內</option>
-				<option value="89">石榴</option>
-				<option value="90">斗六</option>
-				<option value="91">斗南</option>
-				<option value="92">石龜</option>
-			<optgroup label="＝＝嘉義地區＝＝" class="Dropdown_Station"> 
-				<option value="93">大林</option>
-				<option value="94">民雄</option>
-				<option value="95">嘉北</option>
-				<option value="96">嘉義</option>
-				<option value="97">水上</option>
-				<option value="98">南靖</option>
-			<optgroup label="＝＝臺南地區＝＝" class="Dropdown_Station"> 
-				<option value="99">後壁</option>
-				<option value="100">新營</option>
-				<option value="101">柳營</option>
-				<option value="102">林鳳營</option>
-				<option value="103">隆田</option>
-				<option value="104">拔林</option>
-				<option value="105">善化</option>
-				<option value="106">南科</option>
-				<option value="107">新市</option>
-				<option value="108">永康</option>
-				<option value="109">大橋</option>
-				<option value="110">臺南</option>
-				<option value="111">保安</option>
-				<option value="112">仁德</option>
-				<option value="113">中洲</option>
-				<option value="114">長榮大學</option>
-				<option value="115">沙崙</option>
-			<optgroup label="＝＝高雄地區＝＝" class="Dropdown_Station">
-				<option value="116">大湖</option>
-				<option value="117">路竹</option>
-				<option value="118">岡山</option>
-				<option value="119">橋頭</option>
-				<option value="120">楠梓</option>
-				<option value="121">新左營</option>
-				<option value="122">左營</option>
-				<option value="123">高雄</option>
-				<option value="124">鳳山</option>
-				<option value="125">後庄</option>
-				<option value="126">九曲堂</option>
-			<optgroup label="＝＝屏東地區＝＝" class="Dropdown_Station"> 
-				<option value="127">六塊厝</option>
-				<option value="128">屏東</option>
-				<option value="129">歸來</option>
-				<option value="130">麟洛</option>
-				<option value="131">西勢</option>
-				<option value="132">竹田</option>
-				<option value="133">潮州</option>
-				<option value="134">崁頂</option>
-				<option value="135">南州</option>
-				<option value="136">鎮安</option>
-				<option value="137">林邊</option>
-				<option value="138">佳冬</option>
-				<option value="139">東海</option>
-				<option value="140">枋寮</option>
-				<option value="141">加祿</option>
-				<option value="142">內獅</option>
-				<option value="143">枋山</option>
-			<optgroup label="＝＝臺東地區＝＝" class="Dropdown_Station"> 
-				<option value="144">古莊</option>
-				<option value="145">大武</option>
-				<option value="146">瀧溪</option>
-				<option value="147">金崙</option>
-				<option value="148">太麻里</option>
-				<option value="149">知本</option>
-				<option value="150">康樂</option>
-				<option value="151">臺東</option>
-				<option value="152">山里</option>
-				<option value="153">鹿野</option>
-				<option value="154">瑞源</option>
-				<option value="155">瑞和</option>
-				<option value="156">關山</option>
-				<option value="157">海端</option>
-				<option value="158">池上</option>
-			<optgroup label="＝＝花蓮地區＝＝" class="Dropdown_Station"> 
-				<option value="159">富里</option>
-				<option value="160">東竹</option>
-				<option value="161">東里</option>
-				<option value="162">玉里</option>
-				<option value="163">三民</option>
-				<option value="164">瑞穗</option>
-				<option value="165">富源</option>
-				<option value="166">大富</option>
-				<option value="167">光復</option>
-				<option value="168">萬榮</option>
-				<option value="169">鳳林</option>
-				<option value="170">南平</option>
-				<option value="171">豐田</option>
-				<option value="172">壽豐</option>
-				<option value="173">平和</option>
-				<option value="174">志學</option>
-				<option value="175">吉安</option>
-				<option value="176">花蓮</option>
-				<option value="177">北埔</option>
-				<option value="178">景美</option>
-				<option value="179">新城</option>
-				<option value="180">崇德</option>
-				<option value="181">和仁</option>
-				<option value="182">和平</option>
-			<optgroup label="＝＝宜蘭地區＝＝" class="Dropdown_Station"> 
-				<option value="183">漢本</option>
-				<option value="184">武塔</option>
-				<option value="185">南澳</option>
-				<option value="186">東澳</option>
-				<option value="187">永樂</option>
-				<option value="188">蘇澳</option>
-				<option value="189">蘇澳新</option>
-				<option value="190">新馬</option>
-				<option value="191">冬山</option>
-				<option value="192">羅東</option>
-				<option value="193">中里</option>
-				<option value="194">二結</option>
-				<option value="195">宜蘭</option>
-				<option value="196">四城</option>
-				<option value="197">礁溪</option>
-				<option value="198">頂埔</option>
-				<option value="199">頭城</option>
-				<option value="200">外澳</option>
-				<option value="201">龜山</option>
-				<option value="202">大溪</option>
-				<option value="203">大里</option>
-				<option value="204">石城</option>
-			<optgroup label="＝＝平溪/深澳線＝＝" class="Dropdown_Station"> 
-				<option value="205">菁桐</option>
-				<option value="206">平溪</option>
-				<option value="207">嶺腳</option>
-				<option value="208">望古</option>
-				<option value="209">十分</option>
-				<option value="210">大華</option>
-				<option value="211">三貂嶺</option>
-				<option value="212">海科館</option>
-			<optgroup label="＝＝內灣/六家線＝＝" class="Dropdown_Station"> 
-				<option value="213">新竹</option>
-				<option value="214">北新竹</option>
-				<option value="215">千甲</option>
-				<option value="216">新莊</option>
-				<option value="217">竹中</option>
-				<option value="218">六家</option>
-				<option value="219">上員</option>
-				<option value="220">榮華</option>
-				<option value="221">竹東</option>
-				<option value="222">橫山</option>
-				<option value="223">九讚頭</option>
-				<option value="224">合興</option>
-				<option value="225">富貴</option>
-				<option value="226">內灣</option>
-			<optgroup label="＝＝集集線＝＝" class="Dropdown_Station"> 
-				<option value="227">二水</option>
-				<option value="228">源泉</option>
-				<option value="229">濁水</option>
-				<option value="230">龍泉</option>
-				<option value="231">集集</option>
-				<option value="232">水里</option>
-				<option value="233">車埕</option>
-			<optgroup label="＝＝沙崙線＝＝" class="Dropdown_Station"> 
-				<option value="234">長榮大學</option>
-				<option value="235">沙崙</option>
+		
+		<div class="example yui3-skin-sam" id="yui_3_18_1_2_1438775046244_159">
 
-		</select>
+			<style>
+			.yui3-button {
+    			margin:10px 0px 10px 0px;
+    			color: #fff;
+    			background-color: #3476b7;/*右邊按鈕設定*/
+			}
+			</style>
+
+	
+
+			<script type="text/javascript">
+			YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
+
+		   
+			    	var calendar = new Y.Calendar({
+			      	contentBox: "#mycalendar",
+			     	width:'220px',
+			      	showPrevMonth: true,
+			     	showNextMonth: true,
+			     	date: new Date()}).render();
+
+		   			var dtrate = Y.DataType.Date;
+
+			   	calendar.on("selectionChange", function (ev) {
+
+			     	var newDate = ev.newSelection[0];
+
+			     	Y.one("#selecteddate").setHTML(dtrate.format(newDate));
+			   	});
+
+
+			   	Y.one("#togglePrevMonth").on('click', function (ev) {
+			      	ev.preventrefault();
+			      	calendar.set('showPrevMonth', !(calendar.get("showPrevMonth")));
+			    	});
+
+			    Y.one("#toggleNextMonth").on('click', function (ev) {
+			      ev.preventrefault();
+			      calendar.set('showNextMonth', !(calendar.get("showNextMonth")));
+			    });
+			});
+			</script>
+
+		</div>
+
+
+	<table style="border:white solid 2px">
+		<tbody>
+			<tr><td>
+				<select class="StationSelect" name="Station">
+				<option value="0">請選擇起始站</option>
+				<optgroup label="＝＝臺北地區＝＝" class="Dropdown_Station"> 
+					<option value="1">福隆</option>
+					<option value="2">貢寮</option>
+					<option value="3">雙溪</option>
+					<option value="4">牡丹</option>
+					<option value="5">三貂嶺</option>
+					<option value="6">猴硐</option>
+					<option value="7">瑞芳</option>
+					<option value="8">四腳亭</option>
+					<option value="9">暖暖</option>
+					<option value="10">基隆</option>
+					<option value="11">三坑</option>
+					<option value="12">八堵</option>
+					<option value="13">七堵</option>
+					<option value="14">百福</option>
+					<option value="15">五堵</option>
+					<option value="16">汐止</option>
+					<option value="17">汐科</option>
+					<option value="18">南港</option>
+					<option value="19">松山</option>
+					<option value="20">台北</option>
+					<option value="21">萬華</option>
+					<option value="22">板橋</option>
+					<option value="23">浮洲</option>
+					<option value="24">樹林</option>
+					<option value="25">山佳</option>
+					<option value="26">鶯歌</option>
+				<optgroup label="＝＝桃園地區＝＝" class="Dropdown_Station">
+					<option value="27">桃園</option>
+					<option value="28">內壢</option>
+					<option value="29">中壢</option>
+					<option value="30">埔心</option>
+					<option value="31">楊梅</option>
+					<option value="32">富岡</option>
+				<optgroup label="＝＝新竹地區＝＝" class="Dropdown_Station">
+					<option value="33">湖口</option>
+					<option value="34">新豐</option>
+					<option value="35">竹北</option>
+					<option value="36">北新竹</option>
+					<option value="37">新竹</option>
+					<option value="38">香山</option>
+					<option value="39">北湖</option>
+				<optgroup label="＝＝苗栗地區＝＝" class="Dropdown_Station">
+					<option value="40">崎頂</option>
+					<option value="41">竹南</option>
+					<option value="42">談文</option>
+					<option value="43">大山</option>
+					<option value="44">後龍</option>
+					<option value="45">龍崗</option>
+					<option value="46">白沙屯</option>
+					<option value="47">新埔</option>
+					<option value="48">通霄</option>
+					<option value="49">苑裡</option>
+					<option value="50">造橋</option>
+					<option value="51">豐富</option>
+					<option value="52">苗栗
+					</option>
+					<option value="53">南勢</option>
+					<option value="54">銅鑼</option>
+					<option value="55">三義</option>
+				<optgroup label="＝＝台中地區＝＝" class="Dropdown_Station">
+					<option value="56">日南</option>
+					<option value="57">大甲</option>
+					<option value="58">台中港</option>
+					<option value="59">清水</option>
+					<option value="60">沙鹿</option>
+					<option value="61">龍井</option>
+					<option value="62">大肚</option>
+					<option value="63">追分</option>
+					<option value="64">泰安</option>
+					<option value="65">后里</option>
+					<option value="66">豐原</option>
+					<option value="67">潭子</option>
+					<option value="68">太原</option>
+					<option value="69">臺中</option>
+					<option value="70">大慶</option>
+					<option value="71">烏日</option>
+					<option value="72">新烏日</option>
+					<option value="73">成功</option>
+				<optgroup label="＝＝彰化地區＝＝" class="Dropdown_Station">
+					<option value="74">彰化</option>
+					<option value="75">花壇</option>
+					<option value="76">大村</option>
+					<option value="77">員林</option>
+					<option value="78">永靖</option>
+					<option value="79">社頭</option>
+					<option value="80">田中</option>
+					<option value="81">二水</option>
+				<optgroup label="＝＝南投地區＝＝" class="Dropdown_Station"> 
+					<option value="82">源泉</option>
+					<option value="83">濁水</option>
+					<option value="84">龍泉</option>
+					<option value="85">集集</option>
+					<option value="86">水里</option>
+					<option value="87">車埕</option>
+				<optgroup label="＝＝雲林地區＝＝" class="Dropdown_Station">
+					<option value="88">林內</option>
+					<option value="89">石榴</option>
+					<option value="90">斗六</option>
+					<option value="91">斗南</option>
+					<option value="92">石龜</option>
+				<optgroup label="＝＝嘉義地區＝＝" class="Dropdown_Station"> 
+					<option value="93">大林</option>
+					<option value="94">民雄</option>
+					<option value="95">嘉北</option>
+					<option value="96">嘉義</option>
+					<option value="97">水上</option>
+					<option value="98">南靖</option>
+				<optgroup label="＝＝臺南地區＝＝" class="Dropdown_Station"> 
+					<option value="99">後壁</option>
+					<option value="100">新營</option>
+					<option value="101">柳營</option>
+					<option value="102">林鳳營</option>
+					<option value="103">隆田</option>
+					<option value="104">拔林</option>
+					<option value="105">善化</option>
+					<option value="106">南科</option>
+					<option value="107">新市</option>
+					<option value="108">永康</option>
+					<option value="109">大橋</option>
+					<option value="110">臺南</option>
+					<option value="111">保安</option>
+					<option value="112">仁德</option>
+					<option value="113">中洲</option>
+					<option value="114">長榮大學</option>
+					<option value="115">沙崙</option>
+				<optgroup label="＝＝高雄地區＝＝" class="Dropdown_Station">
+					<option value="116">大湖</option>
+					<option value="117">路竹</option>
+					<option value="118">岡山</option>
+					<option value="119">橋頭</option>
+					<option value="120">楠梓</option>
+					<option value="121">新左營</option>
+					<option value="122">左營</option>
+					<option value="123">高雄</option>
+					<option value="124">鳳山</option>
+					<option value="125">後庄</option>
+					<option value="126">九曲堂</option>
+				<optgroup label="＝＝屏東地區＝＝" class="Dropdown_Station"> 
+					<option value="127">六塊厝</option>
+					<option value="128">屏東</option>
+					<option value="129">歸來</option>
+					<option value="130">麟洛</option>
+					<option value="131">西勢</option>
+					<option value="132">竹田</option>
+					<option value="133">潮州</option>
+					<option value="134">崁頂</option>
+					<option value="135">南州</option>
+					<option value="136">鎮安</option>
+					<option value="137">林邊</option>
+					<option value="138">佳冬</option>
+					<option value="139">東海</option>
+					<option value="140">枋寮</option>
+					<option value="141">加祿</option>
+					<option value="142">內獅</option>
+					<option value="143">枋山</option>
+				<optgroup label="＝＝臺東地區＝＝" class="Dropdown_Station"> 
+					<option value="144">古莊</option>
+					<option value="145">大武</option>
+					<option value="146">瀧溪</option>
+					<option value="147">金崙</option>
+					<option value="148">太麻里</option>
+					<option value="149">知本</option>
+					<option value="150">康樂</option>
+					<option value="151">臺東</option>
+					<option value="152">山里</option>
+					<option value="153">鹿野</option>
+					<option value="154">瑞源</option>
+					<option value="155">瑞和</option>
+					<option value="156">關山</option>
+					<option value="157">海端</option>
+					<option value="158">池上</option>
+				<optgroup label="＝＝花蓮地區＝＝" class="Dropdown_Station"> 
+					<option value="159">富里</option>
+					<option value="160">東竹</option>
+					<option value="161">東里</option>
+					<option value="162">玉里</option>
+					<option value="163">三民</option>
+					<option value="164">瑞穗</option>
+					<option value="165">富源</option>
+					<option value="166">大富</option>
+					<option value="167">光復</option>
+					<option value="168">萬榮</option>
+					<option value="169">鳳林</option>
+					<option value="170">南平</option>
+					<option value="171">豐田</option>
+					<option value="172">壽豐</option>
+					<option value="173">平和</option>
+					<option value="174">志學</option>
+					<option value="175">吉安</option>
+					<option value="176">花蓮</option>
+					<option value="177">北埔</option>
+					<option value="178">景美</option>
+					<option value="179">新城</option>
+					<option value="180">崇德</option>
+					<option value="181">和仁</option>
+					<option value="182">和平</option>
+				<optgroup label="＝＝宜蘭地區＝＝" class="Dropdown_Station"> 
+					<option value="183">漢本</option>
+					<option value="184">武塔</option>
+					<option value="185">南澳</option>
+					<option value="186">東澳</option>
+					<option value="187">永樂</option>
+					<option value="188">蘇澳</option>
+					<option value="189">蘇澳新</option>
+					<option value="190">新馬</option>
+					<option value="191">冬山</option>
+					<option value="192">羅東</option>
+					<option value="193">中里</option>
+					<option value="194">二結</option>
+					<option value="195">宜蘭</option>
+					<option value="196">四城</option>
+					<option value="197">礁溪</option>
+					<option value="198">頂埔</option>
+					<option value="199">頭城</option>
+					<option value="200">外澳</option>
+					<option value="201">龜山</option>
+					<option value="202">大溪</option>
+					<option value="203">大里</option>
+					<option value="204">石城</option>
+				<optgroup label="＝＝平溪/深澳線＝＝" class="Dropdown_Station"> 
+					<option value="205">菁桐</option>
+					<option value="206">平溪</option>
+					<option value="207">嶺腳</option>
+					<option value="208">望古</option>
+					<option value="209">十分</option>
+					<option value="210">大華</option>
+					<option value="211">三貂嶺</option>
+					<option value="212">海科館</option>
+				<optgroup label="＝＝內灣/六家線＝＝" class="Dropdown_Station"> 
+					<option value="213">新竹</option>
+					<option value="214">北新竹</option>
+					<option value="215">千甲</option>
+					<option value="216">新莊</option>
+					<option value="217">竹中</option>
+					<option value="218">六家</option>
+					<option value="219">上員</option>
+					<option value="220">榮華</option>
+					<option value="221">竹東</option>
+					<option value="222">橫山</option>
+					<option value="223">九讚頭</option>
+					<option value="224">合興</option>
+					<option value="225">富貴</option>
+					<option value="226">內灣</option>
+				<optgroup label="＝＝集集線＝＝" class="Dropdown_Station"> 
+					<option value="227">二水</option>
+					<option value="228">源泉</option>
+					<option value="229">濁水</option>
+					<option value="230">龍泉</option>
+					<option value="231">集集</option>
+					<option value="232">水里</option>
+					<option value="233">車埕</option>
+				<optgroup label="＝＝沙崙線＝＝" class="Dropdown_Station"> 
+					<option value="234">長榮大學</option>
+					<option value="235">沙崙</option>
+			</select>
+			</td></tr>
+			<tr><td>
+				<select class="StationSelect" name="Station">
+				<option value="0">請選擇目的地</option>
+				<optgroup label="＝＝臺北地區＝＝" class="Dropdown_Station"> 
+					<option value="1">福隆</option>
+					<option value="2">貢寮</option>
+					<option value="3">雙溪</option>
+					<option value="4">牡丹</option>
+					<option value="5">三貂嶺</option>
+					<option value="6">猴硐</option>
+					<option value="7">瑞芳</option>
+					<option value="8">四腳亭</option>
+					<option value="9">暖暖</option>
+					<option value="10">基隆</option>
+					<option value="11">三坑</option>
+					<option value="12">八堵</option>
+					<option value="13">七堵</option>
+					<option value="14">百福</option>
+					<option value="15">五堵</option>
+					<option value="16">汐止</option>
+					<option value="17">汐科</option>
+					<option value="18">南港</option>
+					<option value="19">松山</option>
+					<option value="20">台北</option>
+					<option value="21">萬華</option>
+					<option value="22">板橋</option>
+					<option value="23">浮洲</option>
+					<option value="24">樹林</option>
+					<option value="25">山佳</option>
+					<option value="26">鶯歌</option>
+				<optgroup label="＝＝桃園地區＝＝" class="Dropdown_Station">
+					<option value="27">桃園</option>
+					<option value="28">內壢</option>
+					<option value="29">中壢</option>
+					<option value="30">埔心</option>
+					<option value="31">楊梅</option>
+					<option value="32">富岡</option>
+				<optgroup label="＝＝新竹地區＝＝" class="Dropdown_Station">
+					<option value="33">湖口</option>
+					<option value="34">新豐</option>
+					<option value="35">竹北</option>
+					<option value="36">北新竹</option>
+					<option value="37">新竹</option>
+					<option value="38">香山</option>
+					<option value="39">北湖</option>
+				<optgroup label="＝＝苗栗地區＝＝" class="Dropdown_Station">
+					<option value="40">崎頂</option>
+					<option value="41">竹南</option>
+					<option value="42">談文</option>
+					<option value="43">大山</option>
+					<option value="44">後龍</option>
+					<option value="45">龍崗</option>
+					<option value="46">白沙屯</option>
+					<option value="47">新埔</option>
+					<option value="48">通霄</option>
+					<option value="49">苑裡</option>
+					<option value="50">造橋</option>
+					<option value="51">豐富</option>
+					<option value="52">苗栗
+					</option>
+					<option value="53">南勢</option>
+					<option value="54">銅鑼</option>
+					<option value="55">三義</option>
+				<optgroup label="＝＝台中地區＝＝" class="Dropdown_Station">
+					<option value="56">日南</option>
+					<option value="57">大甲</option>
+					<option value="58">台中港</option>
+					<option value="59">清水</option>
+					<option value="60">沙鹿</option>
+					<option value="61">龍井</option>
+					<option value="62">大肚</option>
+					<option value="63">追分</option>
+					<option value="64">泰安</option>
+					<option value="65">后里</option>
+					<option value="66">豐原</option>
+					<option value="67">潭子</option>
+					<option value="68">太原</option>
+					<option value="69">臺中</option>
+					<option value="70">大慶</option>
+					<option value="71">烏日</option>
+					<option value="72">新烏日</option>
+					<option value="73">成功</option>
+				<optgroup label="＝＝彰化地區＝＝" class="Dropdown_Station">
+					<option value="74">彰化</option>
+					<option value="75">花壇</option>
+					<option value="76">大村</option>
+					<option value="77">員林</option>
+					<option value="78">永靖</option>
+					<option value="79">社頭</option>
+					<option value="80">田中</option>
+					<option value="81">二水</option>
+				<optgroup label="＝＝南投地區＝＝" class="Dropdown_Station"> 
+					<option value="82">源泉</option>
+					<option value="83">濁水</option>
+					<option value="84">龍泉</option>
+					<option value="85">集集</option>
+					<option value="86">水里</option>
+					<option value="87">車埕</option>
+				<optgroup label="＝＝雲林地區＝＝" class="Dropdown_Station">
+					<option value="88">林內</option>
+					<option value="89">石榴</option>
+					<option value="90">斗六</option>
+					<option value="91">斗南</option>
+					<option value="92">石龜</option>
+				<optgroup label="＝＝嘉義地區＝＝" class="Dropdown_Station"> 
+					<option value="93">大林</option>
+					<option value="94">民雄</option>
+					<option value="95">嘉北</option>
+					<option value="96">嘉義</option>
+					<option value="97">水上</option>
+					<option value="98">南靖</option>
+				<optgroup label="＝＝臺南地區＝＝" class="Dropdown_Station"> 
+					<option value="99">後壁</option>
+					<option value="100">新營</option>
+					<option value="101">柳營</option>
+					<option value="102">林鳳營</option>
+					<option value="103">隆田</option>
+					<option value="104">拔林</option>
+					<option value="105">善化</option>
+					<option value="106">南科</option>
+					<option value="107">新市</option>
+					<option value="108">永康</option>
+					<option value="109">大橋</option>
+					<option value="110">臺南</option>
+					<option value="111">保安</option>
+					<option value="112">仁德</option>
+					<option value="113">中洲</option>
+					<option value="114">長榮大學</option>
+					<option value="115">沙崙</option>
+				<optgroup label="＝＝高雄地區＝＝" class="Dropdown_Station">
+					<option value="116">大湖</option>
+					<option value="117">路竹</option>
+					<option value="118">岡山</option>
+					<option value="119">橋頭</option>
+					<option value="120">楠梓</option>
+					<option value="121">新左營</option>
+					<option value="122">左營</option>
+					<option value="123">高雄</option>
+					<option value="124">鳳山</option>
+					<option value="125">後庄</option>
+					<option value="126">九曲堂</option>
+				<optgroup label="＝＝屏東地區＝＝" class="Dropdown_Station"> 
+					<option value="127">六塊厝</option>
+					<option value="128">屏東</option>
+					<option value="129">歸來</option>
+					<option value="130">麟洛</option>
+					<option value="131">西勢</option>
+					<option value="132">竹田</option>
+					<option value="133">潮州</option>
+					<option value="134">崁頂</option>
+					<option value="135">南州</option>
+					<option value="136">鎮安</option>
+					<option value="137">林邊</option>
+					<option value="138">佳冬</option>
+					<option value="139">東海</option>
+					<option value="140">枋寮</option>
+					<option value="141">加祿</option>
+					<option value="142">內獅</option>
+					<option value="143">枋山</option>
+				<optgroup label="＝＝臺東地區＝＝" class="Dropdown_Station"> 
+					<option value="144">古莊</option>
+					<option value="145">大武</option>
+					<option value="146">瀧溪</option>
+					<option value="147">金崙</option>
+					<option value="148">太麻里</option>
+					<option value="149">知本</option>
+					<option value="150">康樂</option>
+					<option value="151">臺東</option>
+					<option value="152">山里</option>
+					<option value="153">鹿野</option>
+					<option value="154">瑞源</option>
+					<option value="155">瑞和</option>
+					<option value="156">關山</option>
+					<option value="157">海端</option>
+					<option value="158">池上</option>
+				<optgroup label="＝＝花蓮地區＝＝" class="Dropdown_Station"> 
+					<option value="159">富里</option>
+					<option value="160">東竹</option>
+					<option value="161">東里</option>
+					<option value="162">玉里</option>
+					<option value="163">三民</option>
+					<option value="164">瑞穗</option>
+					<option value="165">富源</option>
+					<option value="166">大富</option>
+					<option value="167">光復</option>
+					<option value="168">萬榮</option>
+					<option value="169">鳳林</option>
+					<option value="170">南平</option>
+					<option value="171">豐田</option>
+					<option value="172">壽豐</option>
+					<option value="173">平和</option>
+					<option value="174">志學</option>
+					<option value="175">吉安</option>
+					<option value="176">花蓮</option>
+					<option value="177">北埔</option>
+					<option value="178">景美</option>
+					<option value="179">新城</option>
+					<option value="180">崇德</option>
+					<option value="181">和仁</option>
+					<option value="182">和平</option>
+				<optgroup label="＝＝宜蘭地區＝＝" class="Dropdown_Station"> 
+					<option value="183">漢本</option>
+					<option value="184">武塔</option>
+					<option value="185">南澳</option>
+					<option value="186">東澳</option>
+					<option value="187">永樂</option>
+					<option value="188">蘇澳</option>
+					<option value="189">蘇澳新</option>
+					<option value="190">新馬</option>
+					<option value="191">冬山</option>
+					<option value="192">羅東</option>
+					<option value="193">中里</option>
+					<option value="194">二結</option>
+					<option value="195">宜蘭</option>
+					<option value="196">四城</option>
+					<option value="197">礁溪</option>
+					<option value="198">頂埔</option>
+					<option value="199">頭城</option>
+					<option value="200">外澳</option>
+					<option value="201">龜山</option>
+					<option value="202">大溪</option>
+					<option value="203">大里</option>
+					<option value="204">石城</option>
+				<optgroup label="＝＝平溪/深澳線＝＝" class="Dropdown_Station"> 
+					<option value="205">菁桐</option>
+					<option value="206">平溪</option>
+					<option value="207">嶺腳</option>
+					<option value="208">望古</option>
+					<option value="209">十分</option>
+					<option value="210">大華</option>
+					<option value="211">三貂嶺</option>
+					<option value="212">海科館</option>
+				<optgroup label="＝＝內灣/六家線＝＝" class="Dropdown_Station"> 
+					<option value="213">新竹</option>
+					<option value="214">北新竹</option>
+					<option value="215">千甲</option>
+					<option value="216">新莊</option>
+					<option value="217">竹中</option>
+					<option value="218">六家</option>
+					<option value="219">上員</option>
+					<option value="220">榮華</option>
+					<option value="221">竹東</option>
+					<option value="222">橫山</option>
+					<option value="223">九讚頭</option>
+					<option value="224">合興</option>
+					<option value="225">富貴</option>
+					<option value="226">內灣</option>
+				<optgroup label="＝＝集集線＝＝" class="Dropdown_Station"> 
+					<option value="227">二水</option>
+					<option value="228">源泉</option>
+					<option value="229">濁水</option>
+					<option value="230">龍泉</option>
+					<option value="231">集集</option>
+					<option value="232">水里</option>
+					<option value="233">車埕</option>
+				<optgroup label="＝＝沙崙線＝＝" class="Dropdown_Station"> 
+					<option value="234">長榮大學</option>
+					<option value="235">沙崙</option>
+			</select>
+			</td></tr>
+			<tr><td>
+				<div id="demo" class="yui3-skin-sam yui3-g">
+					<div id="leftcolumn" class="yui3-u">
+
+				     
+				  		<div id="rightcolumn" class="yui3-u">
+				   			<div id="links" style="padding-left:20px;">
+				      
+				      			<button id="togglePrevMonth" class="yui3-button">點選以隱藏上月日期</button><br>
+				      			<button id="toggleNextMonth" class="yui3-button">點選以隱藏下月日期</button><br>
+				      			<p style="color: white;">請選擇日期: <span id="selecteddate">2015-08-01</span></p>
+				   			</div>
+				  		</div>
+		 			</div>
+				</div>
+			</td></tr>
+		</tbody>		
+	</table>
 	</body>
 </html>
