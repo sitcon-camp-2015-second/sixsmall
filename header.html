@@ -27,55 +27,6 @@
 		</nav>
 	</head>
 	<body>
-		
-		
-		<div class="example yui3-skin-sam" id="yui_3_18_1_2_1438775046244_159">
-
-			<style>
-			.yui3-button {
-    			margin:10px 0px 10px 0px;
-    			color: #fff;
-    			background-color: #3476b7;/*右邊按鈕設定*/
-			}
-			</style>
-
-	
-
-			<script type="text/javascript">
-			YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
-
-		   
-			    	var calendar = new Y.Calendar({
-			      	contentBox: "#mycalendar",
-			     	width:'220px',
-			      	showPrevMonth: true,
-			     	showNextMonth: true,
-			     	date: new Date()}).render();
-
-		   			var dtrate = Y.DataType.Date;
-
-			   	calendar.on("selectionChange", function (ev) {
-
-			     	var newDate = ev.newSelection[0];
-
-			     	Y.one("#selecteddate").setHTML(dtrate.format(newDate));
-			   	});
-
-
-			   	Y.one("#togglePrevMonth").on('click', function (ev) {
-			      	ev.preventrefault();
-			      	calendar.set('showPrevMonth', !(calendar.get("showPrevMonth")));
-			    	});
-
-			    Y.one("#toggleNextMonth").on('click', function (ev) {
-			      ev.preventrefault();
-			      calendar.set('showNextMonth', !(calendar.get("showNextMonth")));
-			    });
-			});
-			</script>
-
-		</div>
-
 
 	<table style="border:white solid 2px">
 		<tbody>
@@ -600,6 +551,53 @@
 			</select>
 			</td></tr>
 			<tr><td>
+				<div class="example yui3-skin-sam" id="yui_3_18_1_2_1438775046244_159">
+
+				<style>
+				.yui3-button {
+    				margin:10px 0px 10px 0px;
+    				color: #fff;
+    				background-color: #3476b7;/*右邊按鈕設定*/
+				}
+				</style>
+
+	
+
+					<script type="text/javascript">
+					YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
+
+				   
+					    	var calendar = new Y.Calendar({
+					      	contentBox: "#mycalendar",
+					     	width:'220px',
+					      	showPrevMonth: true,
+					     	showNextMonth: true,
+					     	date: new Date()}).render();
+
+				   			var dtrate = Y.DataType.Date;
+
+					   	calendar.on("selectionChange", function (ev) {
+
+					     	var newDate = ev.newSelection[0];
+
+					     	Y.one("#selecteddate").setHTML(dtrate.format(newDate));
+					   	});
+
+
+					   	Y.one("#togglePrevMonth").on('click', function (ev) {
+					      	ev.preventrefault();
+					      	calendar.set('showPrevMonth', !(calendar.get("showPrevMonth")));
+					    	});
+
+					    Y.one("#toggleNextMonth").on('click', function (ev) {
+					      ev.preventrefault();
+					      calendar.set('showNextMonth', !(calendar.get("showNextMonth")));
+					    });
+					});
+					</script>
+				</div>
+			</td></tr>
+			<tr><td>
 				<div id="demo" class="yui3-skin-sam yui3-g">
 					<div id="leftcolumn" class="yui3-u">
 
@@ -614,6 +612,9 @@
 				  		</div>
 		 			</div>
 				</div>
+			</td></tr>
+			<tr><td>
+				<button id="but">查詢</button>
 			</td></tr>
 		</tbody>		
 	</table>
